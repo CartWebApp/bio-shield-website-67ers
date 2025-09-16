@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BioShield | Contact Us</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">BioShield</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact Us</h1>
+
+    <section class="contact-form-section" aria-labelledby="contact-form-heading">
+      <h2 id="contact-form-heading">Get in Touch</h2>
+      <form class="contact-form" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" required>
+          <option value="">Select a subject</option>
+          <option value="general">General</option>
+          <option value="product">Product Questions</option>
+          <option value="wholesale">Wholesale</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-accent">Send Message</button>
+      </form>
+    </section>
+
+    <section class="company-info" aria-label="Company contact information">
+      <h2>Contact Information</h2>
+      <address>
+        <p><strong>BioShield Inc.</strong></p>
+        <p>123 Forest Lane</p>
+        <p>Greenwood, CA 94000</p>
+        <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+        <p>Email: <a href="mailto:info@bioshield.com">info@bioshield.com</a></p>
+      </address>
+
+      <div class="social-media">
+        <a href="#" aria-label="Facebook" class="social-icon">📘</a>
+        <a href="#" aria-label="Twitter" class="social-icon">🐦</a>
+        <a href="#" aria-label="Instagram" class="social-icon">📸</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <form class="newsletter-form" aria-label="Newsletter Signup">
+        <label for="newsletter-email">Subscribe to our newsletter</label>
+        <input type="email" id="newsletter-email" placeholder="Your email" required />
+        <button type="submit" class="btn btn-accent">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

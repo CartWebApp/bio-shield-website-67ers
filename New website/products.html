@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BioShield | Products</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">BioShield</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="products-header container">
+      <h1>Products</h1>
+      <label for="category-filter" class="filter-label">Filter by category:</label>
+      <select id="category-filter" aria-label="Filter products by category">
+        <option value="all">All</option>
+        <option value="spray">Spray</option>
+        <option value="balm">Balm</option>
+        <option value="wipes">Wipes</option>
+        <option value="extra">Extra Strength</option>
+      </select>
+    </section>
+
+    <section class="products-grid container" aria-live="polite" aria-label="Product Listings">
+      <article class="product-card" data-category="spray">
+        <a href="#">
+          <img src="images/spray.jpg" alt="BioShield Spray" />
+          <h3>BioShield Spray</h3>
+          <p class="price">$12.99</p>
+        </a>
+      </article>
+      <article class="product-card" data-category="balm">
+        <a href="#">
+          <img src="images/balm.jpg" alt="BioShield Balm" />
+          <h3>BioShield Balm</h3>
+          <p class="price">$14.99</p>
+        </a>
+      </article>
+      <article class="product-card" data-category="wipes">
+        <a href="#">
+          <img src="images/wipes.jpg" alt="BioShield Wipes" />
+          <h3>BioShield Wipes</h3>
+          <p class="price">$9.99</p>
+        </a>
+      </article>
+      <article class="product-card" data-category="extra">
+        <a href="#">
+          <img src="images/extra_strength.jpg" alt="BioShield Extra Strength Spray" />
+          <h3>BioShield Extra Strength Spray</h3>
+          <p class="price">$17.99</p>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <form class="newsletter-form" aria-label="Newsletter Signup">
+        <label for="email">Subscribe to our newsletter</label>
+        <input type="email" id="email" placeholder="Your email" required />
+        <button type="submit" class="btn btn-accent">Subscribe</button>
+      </form>
+      <div class="social-media">
+        <a href="#" aria-label="Facebook" class="social-icon">📘</a>
+        <a href="#" aria-label="Twitter" class="social-icon">🐦</a>
+        <a href="#" aria-label="Instagram" class="social-icon">📸</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
