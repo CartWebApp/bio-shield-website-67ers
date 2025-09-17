@@ -148,4 +148,19 @@ body {
     background-color: #2E7D32;
     color: white;
   }
-  
+  /* Hero Section Backgrounds for Different Pages */
+  .hero.home {
+    background-image: url('https://images.pexels.com/photos/18838188/pexels-photo-18838188.jpeg');
+  }
+
+  .hero.about {
+    background-image: url('https://example.com/about-background.jpg');
+  }
+
+  .hero.contact {
+    background-image: url('https://example.com/contact-background.jpg');
+  }
+  .hero-content h1,
+  .hero-content p {
+    color: #FFEB3B; /* Bright yellow for contrast */
+  }
