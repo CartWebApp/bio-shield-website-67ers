@@ -67,7 +67,7 @@ body {
 
 /* Hero Section (index.html) */
 .hero {
-  background: url('images/hero-bg.jpeg') no-repeat center/cover;
+  background: linear-gradient(rgba(46, 125, 50, 0.5), rgba(46, 125, 50, 0.5)), url('images/hero-bg.jpeg') no-repeat center/cover;
   padding: 6rem 0;
   text-align: center;
   color: var(--text-light);
@@ -401,6 +401,7 @@ body {
   background-color: var(--primary-color);
   color: var(--text-light);
   padding: 2rem 0;
+  margin-top: auto; /* Ensure footer stays at the bottom */
 }
 
 .footer-container {
@@ -436,10 +437,21 @@ body {
   font-size: 1.5rem;
   color: var(--text-light);
   text-decoration: none;
+  width: 20px;
 }
 
 .social-icon:hover {
   color: var(--accent-color);
+}
+
+/* Ensure the footer stays at the bottom of the page */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Responsive Design */
