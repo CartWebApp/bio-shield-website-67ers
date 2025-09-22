@@ -1,18 +1,18 @@
 // Smooth scrolling for navigation links
-document.querySelectorAll('.nav-links a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-    if (targetId.includes('.html')) {
-      window.location.href = targetId;
-    } else if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  });
-});
+// document.querySelectorAll('.nav-links a').forEach(anchor => {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     const targetId = this.getAttribute('href');
+//     const targetElement = document.querySelector(targetId);
+//     if (targetId.includes('.html')) {
+//       window.location.href = targetId;
+//     } else if (targetElement) {
+//       targetElement.scrollIntoView({ behavior: 'smooth' });
+//     } else {
+//       window.scrollTo({ top: 0, behavior: 'smooth' });
+//     }
+//   });
+// });
 
 // Hero section fade-in on load (index.html)
 document.addEventListener('DOMContentLoaded', () => {
